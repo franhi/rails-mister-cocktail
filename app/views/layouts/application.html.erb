@@ -7,9 +7,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
   </head>
 
   <body>
+    <div class="navbar"> <div> <%= image_tag "image.jpeg", class: "logo" %> </div> <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-primary" %> </div>
     <%= yield %>
   </body>
 </html>
