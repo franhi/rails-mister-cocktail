@@ -14,8 +14,12 @@
     </head>
   </head>
 
-  <body>
-    <div class="navbar"> <div> <%= image_tag "image.jpg", class: "logo" %> </div> <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-primary" %> </div>
+  <body>.
+    <div class="navbar"> <div> <%= link_to  cocktails_path do %>
+    <%= image_tag "image.jpg", class: "logo" %>
+    <% end %>
+    </div> <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-primary" %> </div>
     <%= yield %>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>

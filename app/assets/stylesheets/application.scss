@@ -28,6 +28,7 @@
      font-size: 20px;
      text-decoration: none;
      color: black;
+     margin: 0px;
  }
 
 .navbar::before, .navbar::after {
@@ -59,7 +60,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 20px;
+
  }
  .banner h1 {
    font-size: 50px;

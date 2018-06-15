@@ -8,3 +8,9 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+link = document.querySelector("#btn")
+link.addEventListener('click', (event) => {
+  let unhide = document.querySelector("#form-container")
+  unhide.classList.toggle("hide")
+})
